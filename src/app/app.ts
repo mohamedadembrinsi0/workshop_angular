@@ -1,5 +1,4 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { Navbar } from './components/navbar/navbar';
 import { Header } from './components/header/header';
 import { Friends } from './components/friends/friends';
@@ -10,7 +9,7 @@ import { Notifications } from './components/notifications/notifications';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Navbar, Header, Friends, Profile, Footer, Conferences, Notifications],
+  imports: [Navbar, Header, Friends, Profile, Footer, Conferences, Notifications],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

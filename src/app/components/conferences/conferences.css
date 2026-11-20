@@ -1,0 +1,132 @@
+.conference-section {
+  margin: 0;
+  padding: 16px 17px 20px;
+  border-left: 3px solid #157d76;
+  background: #fff;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.heading-icon {
+  display: grid;
+  width: 36px;
+  height: 36px;
+  flex: 0 0 36px;
+  place-items: center;
+  border-radius: 50%;
+  background: #e5f8f5;
+  color: #26a69a;
+  font-size: 20px;
+}
+
+.section-heading h2 {
+  margin: 0 0 5px;
+  color: #173b67;
+  font-size: 17px;
+}
+
+.section-heading p {
+  margin: 0;
+  color: #718096;
+  font-size: 13px;
+}
+
+.search-field {
+  display: block;
+  width: min(100%, 265px);
+  margin-bottom: 0;
+}
+
+.search-field input {
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #d8e0e8;
+  border-radius: 8px;
+  padding: 10px 12px;
+  color: #173b67;
+  font: inherit;
+  font-size: 12px;
+}
+
+.search-field input::placeholder {
+  color: #9aa8b9;
+  font-style: italic;
+}
+
+.conference-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  margin-top: 0;
+}
+
+.conference-card {
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #e4eaf0;
+  border-radius: 11px;
+  background: #f7f9fc;
+}
+
+.conference-card h3 {
+  min-height: 32px;
+  margin: 0 0 9px;
+  color: #173b67;
+  font-size: 14px;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.conference-card p {
+  margin: 0 0 8px;
+  color: #182b43;
+  font-size: 12px;
+}
+
+.conference-card p:last-of-type {
+  margin-bottom: 10px;
+}
+
+.registration-button {
+  border: 0;
+  border-radius: 6px;
+  padding: 7px 12px;
+  color: white;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.registration-button--available {
+  background: #20824c;
+}
+
+.registration-button--limited {
+  background: #e78300;
+}
+
+.registration-button--full {
+  background: #d32f2f;
+  cursor: not-allowed;
+}
+
+.empty-state {
+  margin: 0;
+  border: 1px dashed #cbd7e4;
+  border-radius: 8px;
+  padding: 20px;
+  color: #627187;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .conference-list {
+    grid-template-columns: 1fr;
+  }
+}

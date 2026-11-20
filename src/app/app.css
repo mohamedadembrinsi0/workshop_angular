@@ -1,0 +1,11 @@
+.page-content {
+  padding: 0 24px;
+  background: #f4f7fb;
+}
+
+.dashboard-sections {
+  display: grid;
+  max-width: 1120px;
+  gap: 0;
+  margin: 0 auto;
+}
